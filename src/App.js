@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import Header from './components/header';
-import Slider from './components/slider';
+import SimpleSlider from './components/slider';
 import About from './components/about';
 import Meters from './components/meters';
 import Team from './components/team';
@@ -26,9 +26,10 @@ class App extends Component {
     render() {
       return (
           <div className="App">
-              <img className={"alterra-logo"} src={logo} alt={"logo"}/>
+              <header className={"alterra-header"}><img className={"alterra-logo"} src={logo} alt={"logo"}/>
               <Header/>
-              <Slider/>
+              </header>
+              <SimpleSlider/>
               <About/>
               <Meters/>
               Alterrasoft!

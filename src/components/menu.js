@@ -31,7 +31,7 @@ class Menu extends Component {
                         {
                             Object.keys(menuObject).map((listKey) => (
                                 <li key={listKey.toString()} className={"alterra-navigation-list-item"}>
-                                    <a href={homeUrl}>{listKey}</a>
+                                    <a href={`${homeUrl}#${listKey}`}>{listKey}</a>
                                 </li>
                             ))
                         }
