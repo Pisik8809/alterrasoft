@@ -86,11 +86,14 @@ table {
 @import "~slick-carousel/slick/slick-theme.css";
 
 .alterra-header {
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 202;
+}
+
+.dashed {
   background: darkgrey;
 }
 
@@ -137,40 +140,102 @@ table {
 
 .slick-slide-heading {
   position: absolute;
-  height: 60px;
-  line-height: 60px;
+  font-size: 74px;
+  line-height: 76px;
+  letter-spacing: 0px;
+  margin-bottom: 22px;
+  height: auto;
   top: calc(50% - 30px);
-  width: 78.5vw;
+  width: 64vw;
   text-align: center;
   z-index: 200;
   color: white;
-  font-size: 48px;
-  padding: 0 10vw;
+  padding: 0 18vw;
 }
 
 .slick-slide-description {
   position: absolute;
-  top: calc(50% + 30px);
-  width: 78.5vw;
+  top: calc(50% + 150px);
+  width: 64vw;
   text-align: center;
   z-index: 200;
   color: white;
-  font-size: 36px;
-  padding: 0 10vw;
+  font-size: 24pt;
+  line-height: 36pt;
+  padding: 0 18vw;
 }
 
 .slick-slide-image {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
 }
 
 .slick-slide {
 }
 
+.slick-arrow.slick-next,
+.slick-arrow.slick-prev {
+  z-index: 201;
+  background-color: rgba(255,255,255,.35);
+  height: 70px;
+  width: 70px;
+  line-height: 70px;
+  color: #fff;
+  top: calc(50% - 35px);
+}
+
 .slick-arrow.slick-next {
    right: 0;
-   z-index: 201;
+
 }
 
 .slick-arrow.slick-prev {
   left: 0;
-  z-index: 201;
+}
+
+.slick-arrow.slick-next:before,
+.slick-arrow.slick-prev:before {
+  content: '\003C';
+  font-family: unset;
+  font-size: 35px;
+  position: absolute;
+  top: calc(50% - 17.5px);
+  left: calc(50% - 17.5px);
+}
+
+.slick-arrow.slick-next:before {
+  content: '\003E';
+  left: calc(50% - 2.5px);
+}
+
+.slick-dots {
+  bottom: 25px;
+}
+
+.slick-dots li button:before,
+.slick-dots li.slick-active button:before {
+  font-size: 14px;
+  padding-top: 1.5px;
+  color: white;
+}
+
+.slick-dots li button {
+  width: 20px;
+  height: 20px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+}
+
+.slick-dots li.slick-active button {
+  border: 2px solid white;
+}
+
+.about-section-grid {
+  display: flex;
+  padding: 0 25px;
+}
+
+.about-section-item {
+  margin: 0 15px;
 }

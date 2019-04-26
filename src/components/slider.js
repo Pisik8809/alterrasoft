@@ -5,13 +5,14 @@ import Slider from "react-slick";
 class SimpleSlider extends React.Component {
     render() {
         var settings = {
-            dots: false,
+            dots: true,
             arrows: true,
             infinite: true,
             speed: 500,
             slidesToShow: 1,
             slidesToScroll: 1,
-            autoplay: true
+            autoplay: true,
+            autoplaySpeed: 8000
         };
         return (
             <Slider {...settings}>
