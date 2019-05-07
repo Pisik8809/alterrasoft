@@ -35,7 +35,6 @@ class App extends Component {
               <SimpleSlider/>
               <About/>
               <Meters/>
-              Alterrasoft!
               <Team/>
               <Technologies/>
               <Portfolio/>
