@@ -5,11 +5,17 @@ class Meters extends Component {
     render() {
         return (
             <div className="alterra-meters-block">
-            <label htmlFor="fuel">Fuel level:</label>
-            <meter id="fuel"  min="0" max="100"
-                   low="33" high="66" optimum="80"  value="50">
-                at 50/100
-            </meter>
+            <div className="ultrawrapper">
+            <h2 className="meters-heading">Our Skills, Talents & Expertise</h2>
+            <div className="meters-wrapper">
+            <label htmlFor="trend">Trend folowing:</label>
+            <progress title="75%" id="trend" max="100" value="75"> 75% </progress>
+            <label htmlFor="code-quality">Code quality:</label>
+            <progress title="99%" id="code-quality" max="100" value="99"> 99% </progress>
+            <label htmlFor="predictability">Predictability:</label>
+            <progress title="85%" id="predictability" max="100" value="85"> 85% </progress>
+            </div>
+            </div>
             </div>
         );
     }
