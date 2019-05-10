@@ -339,3 +339,76 @@ table {
   font-size: 14px;
   line-height: 22px;
 }
+
+.technologies-block {
+  padding: 50px 0;
+}
+
+.technologies-block-heading {
+  font-size: 34px;
+  line-height: 1.284em;
+  margin-bottom: 25px;
+}
+
+.techno-items-global-wrapper {
+  display: flex;
+  padding: 0 50px;
+  justify-content: space-around;
+}
+
+.technoly-item-wrapper {
+  flex-basis: 25%;
+  margin: 0 12.5px;
+}
+
+.technoly-item-heading {
+  font-size: 19px;
+  line-height: 1.4em;
+  margin-top: 35px;
+  margin-bottom: 25px;
+  transition: color 0.5s ease-in-out;
+}
+
+.technoly-item-description {
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: 500;
+  color: #6e767a;
+}
+
+.techlogogy-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+  width: 200px;
+  height: 200px;
+  border: 3px solid #e1e1e1;
+  transition: border 0.5s ease-in-out;
+  border-radius: 50%;
+  margin: 0 auto;
+  color: white;
+}
+
+.techlogogy-icon-wrapper>svg {
+  padding: 25px;
+  background: #797979;
+  transition: background 0.5s ease-in-out;
+  border-radius: 50%;
+}
+
+.technoly-item-wrapper:nth-child(2) svg {
+  padding: 28px 25px;
+}
+
+.technology-icon-plus-heading:hover>.technoly-item-heading {
+  color: #0093e9;
+}
+
+.technology-icon-plus-heading:hover>.techlogogy-icon-wrapper {
+  border-color: #0093e9;
+}
+
+.technology-icon-plus-heading:hover>.techlogogy-icon-wrapper>svg {
+  background:#0093e9;
+}
