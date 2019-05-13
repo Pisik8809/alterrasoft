@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 class About extends Component {
     render() {
         return (
-            <div>
+            <section className="about-block">
                 <h2 className={"about-heading"}>About Us & What We Do</h2>
                 <p className={"about-description"}>At AlterraSoft we specialize in outsourcing IT services.</p>
                 <div className={"about-section-grid"}>
@@ -54,7 +54,7 @@ class About extends Component {
                         </p>
                     </div>
                 </div>
-            </div>
+            </section>
         );
     }
 }

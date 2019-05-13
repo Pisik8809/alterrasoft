@@ -14,7 +14,6 @@ class Header extends Component {
     }
 
     handleScroll(event) {
-        console.log('the scroll things', event);
         if (window.scrollY < 10 && this.state.scrollClass === 'dashed') {
             this.setState({scrollClass: ''});
             console.log('delete');
