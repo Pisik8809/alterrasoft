@@ -430,7 +430,8 @@ table {
   text-decoration: none;
 }
 
-.portfolio-item:visited {
+.portfolio-item:visited, .blog-block-link_with_img:visited,
+.blog-block-item_category-link:visited {
   color: black;
 }
 
@@ -494,4 +495,130 @@ table {
   font-size: 15px;
   line-height: 17px;
   margin: 15px auto;
+}
+
+.blog-block-link_with_img>img {
+  max-width: 100%;
+  height: auto;
+}
+
+.blog-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.blog-block-heading {
+  flex-basis: 100%;
+  padding-top: 40px;
+  margin-bottom: 20px;
+  font-size: 34px;
+  line-height: 1.284em;
+}
+
+.blog-block-item {
+  flex-basis: 30%;
+  margin: 0 15px 15px;
+}
+
+.blog-block-item-description {
+  height: 25px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 15px 0;
+}
+
+.blog-block-link_with_img,
+.blog-block-item_category-link {
+  text-decoration: none;
+}
+
+.blog-block-item_heading {
+  padding-top: 15px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4em;
+}
+
+.blog-block-item_heading:hover {
+  color: #0093e9;
+}
+
+.blog-block-item-category {
+  color: #0093e9;
+}
+
+.blog-block-item-category>svg {
+  margin-right: 15px;
+}
+
+.blog-block-item-description {
+  color: #6e767a;
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: 500;
+}
+
+.contact-form-block {
+  padding: 0 100px;
+}
+
+.full-form-element {
+  width: 50%;
+}
+
+.full-form-element label {
+  display: block;
+  padding: 10px 25px;
+  position: relative;
+}
+
+.full-form-element label:before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  left: 0px;
+  top: 10px;
+  height: 20px;
+  background: #0093E9;
+}
+
+.contact-form-block_heading {
+  font-size: 22px;
+  line-height: 1.2em;
+  font-weight: 700;
+  margin-bottom: 25px;
+  flex-basis: 100%;
+}
+
+.full-form-element {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-example {
+  flex-basis: 50%;
+}
+
+.form-example-2 {
+  flex-basis: 100%;
+}
+
+.form-example, .form-example-2 {
+  text-align: left;
+}
+
+.form-example>input, .form-example-2>input, .form-example-2>textarea {
+  width: 100%; 
+}
+
+.form-example:first-of-type>input {
+  width: calc(100% - 25px);
+  margin-right: 25px;
 }

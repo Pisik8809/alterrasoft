@@ -12,9 +12,9 @@ import Form from './components/form';
 import CallToAction from './components/call-to-action';
 import Footer from './components/footer';
 import './App.css';
-import { faObjectGroup, faFolderOpen, faFile, faTv, faPalette, faDesktop, faWrench, faCog} from '@fortawesome/free-solid-svg-icons';
+import { faObjectGroup, faFolderOpen, faFile, faTv, faPalette, faDesktop, faWrench, faCog, faTag} from '@fortawesome/free-solid-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
-library.add(faObjectGroup, faFolderOpen, faFile, faTv, faPalette, faDesktop, faWrench, faCog);
+library.add(faObjectGroup, faFolderOpen, faFile, faTv, faPalette, faDesktop, faWrench, faCog, faTag);
 
 class App extends Component {
   constructor(props){
