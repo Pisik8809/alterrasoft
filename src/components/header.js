@@ -1,10 +1,10 @@
 // header.js
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import Menu from './menu';
 
 //const headerHeight = window.innerHeight;
 
-class Header extends Component {
+class Header extends PureComponent {
     constructor(props) {
         super(props);
         this.handleScroll = this.handleScroll.bind(this);
@@ -14,7 +14,7 @@ class Header extends Component {
     }
 
     handleScroll(event) {
-        if (window.scrollY < 10 && this.state.scrollClass === 'dashed') {
+        if (window.scrollY < 1 && this.state.scrollClass === 'dashed') {
             this.setState({scrollClass: ''});
             console.log('delete');
         }
