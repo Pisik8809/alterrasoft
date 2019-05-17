@@ -2,9 +2,30 @@
   "main": {
     "Home": "#",
     "About": "#about",
-    "Team": "#team",
     "Projects": "#projects",
     "Blog": "#blog",
     "Contacts": "#contacts"
-  }
+  },
+  "ultratest":[
+    {"first": "http://localhost:3000/conf-1-5.jpg", 
+      "second": "KharkivCss#4-2019", 
+      "third": "Kharkiv css #4 (2019)..."
+    },
+    {"first": "http://localhost:3000/schema1-5.jpg", 
+      "second": "Stages of Software Development Cycle", 
+      "third": "We introduce stages of development..."
+    },
+    {"first": "http://localhost:3000/prices1-6.jpg", 
+      "second": "IT  Software Development: How to Choose Provider", 
+      "third": "How to choose software developer for you project?..."
+    },
+    {"first": "http://localhost:3000/b2b1-5.jpg", 
+      "second": "B2B Application Development", 
+      "third": "What is B2B model? Who need B2B app? B2B iOS application structure..."
+    },
+    {"first": "http://localhost:3000/UaIT1-4.jpg", 
+      "second": "Ukrainian software developers: reasons to hire", 
+      "third": "What main advantages of hiring Ukrainian IT companies?..."
+    }
+  ]
 }

@@ -47,6 +47,10 @@ table {
   border-spacing: 0;
 }
 
+aside {
+  outline: none;
+}
+
 .App {
   text-align: center;
   background: gainsboro;
@@ -94,7 +98,7 @@ table {
 }
 
 .dashed {
-  background: darkgrey;
+  background: #797979;
 }
 
 .alterra-navigation {
@@ -114,12 +118,17 @@ table {
   line-height: 34px;
 }
 
-.alterra-navigation-list-item:hover {
+/*.alterra-navigation-list-item:hover {
   background: #0093e9;
+}*/
+
+.alterra-navigation-list-item> a {
+  height: 100%;
+  display: block;
 }
 
-.alterra-navigation-list-item.active,
-.alterra-navigation-list-item:first-of-type {
+.alterra-navigation-list-item> a.active,
+.alterra-navigation-list-item> a:hover {
   background: #0093e9;
 }
 
@@ -651,7 +660,7 @@ table {
 
 .call-to-action-block {
   display: flex;
-  margin: 40px auto 25px;
+  margin: 40px auto 0;
   padding: 50px 0;
   justify-content: space-around;
   align-items: center;
@@ -681,5 +690,77 @@ table {
 }
 
 .call-to-action_link:visited {
+  color: white;
+}
+
+footer {
+  background: #212121;
+}
+
+.contacts-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contacts-section_item {
+  flex-basis: 33%;
+  color: white;
+  padding: 25px 0;
+}
+
+.footer-contacts-link {
+ color: #6e767a;
+ padding: 7.5px 0;
+}
+
+.footer-contact-heading {
+  font-size: 20px;
+  margin-bottom: 25px;
+  line-height: 1.2em;
+  font-weight: 700;  
+}
+
+.footer-contacts-link>a {
+  text-decoration: none;
+  color: #0093E9;
+}
+
+.contacts-section_item>img {
+  max-width: 240px;
+}
+
+.copywrite {
+  background: #303030;
+  padding: 30px 0;
+  color: white;
+}
+
+.copywrite span {
+  color: #0093E9;
+}
+
+.footer-contacts-social_link {
+  padding: 10px 13.5px;
+  border: 1px solid white;
+  color: white;
+  text-decoration: none;
+}
+
+.footer-contacts-social_link:first-of-type {
+  border-radius: 3px 0 0 3px;
+  padding: 10px 15px;
+}
+
+.footer-contacts-social_link:last-of-type {
+  border-radius: 0 3px 3px 0;
+}
+
+.footer-contacts-social_link:hover {
+  background: #0093E9;
+}
+
+.footer-contacts-social_link:visited {
   color: white;
 }

@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 class Form extends Component {
     render() {
         return (
-            <div className="contact-form-block">
+            <div className="contact-form-block" id="contacts">
                 <form action="https://formspree.io/pisik8809@gmail.com" method="post" id="confirmationForm" target="_blank" className="full-form-element">
                 <h2 className="contact-form-block_heading">Contact us to discuss your project</h2>
                     <div className="form-example">

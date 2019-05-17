@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 class Portfolio extends Component {
     render() {
         return (
-            <section className="portfolio-block">
+            <section className="portfolio-block" id="projects">
             <h2 className="portfolio-heading">Our Proudly Presented Projects</h2>
             <p className="portfolio-description">You can evaluate the projects implemented by our team.</p>
                 <div className="portfolio-items-wrapper">
