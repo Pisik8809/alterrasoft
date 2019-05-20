@@ -1,5 +1,6 @@
 // header.js
 import React, { PureComponent } from 'react';
+import logo from '../logo.svg';
 import Menu from './menu';
 
 //const headerHeight = window.innerHeight;
@@ -27,6 +28,7 @@ class Header extends PureComponent {
     render() {
         return (
             <div className={this.state.scrollClass}>
+            <img className={"alterra-logo"} src={logo} alt={"logo"}/>
                 <Menu/>
             </div>
         );

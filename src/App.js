@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import Header from './components/header';
 import SimpleSlider from './components/slider';
 import About from './components/about';
@@ -30,9 +29,7 @@ class App extends Component {
     render() {
       return (
           <div className="App" id="home">
-              <header className={"alterra-header"}><img className={"alterra-logo"} src={logo} alt={"logo"}/>
-              <Header/>
-              </header>
+              <header className={"alterra-header"}><Header/></header>
               <SimpleSlider/>
               <About/>
               <Meters/>

@@ -20,12 +20,12 @@ class Blog extends Component {
     }
 
     render() {
-        const ultra = this.state.alterraData.ultratest;
-        if (!ultra) {
+        const blogData = this.state.alterraData.blog;
+        if (!blogData) {
             return <div>NO DATA</div>
         }
         else {
-            const ultramarckup = ultra.map((item, index) =>
+            const blogMarckup = blogData.map((item, index) =>
             <div key={index} className="blog-block-item">
                 <a href="http://localhost:3000/" className="blog-block-link_with_img">
                     <img src={item.first} alt="conf-cart"/>
@@ -40,7 +40,7 @@ class Blog extends Component {
             return (
                 <section className="blog-block" id="blog">
                     <h2 className="blog-block-heading">We Like To Write About Innovative Ideas</h2>
-                    {ultramarckup}
+                    {blogMarckup}
                 </section>
             );
         }  

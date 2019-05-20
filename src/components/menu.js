@@ -5,10 +5,30 @@ class Menu extends Component {
     constructor(props){
         super(props);
         this.state = {
+            alterraData: {}
         }
     }
 
+    getMyData(){
+        fetch('http://localhost:3000/alterra-data.json')
+            .then((res) => res.json())
+            .then((data) => {
+                this.setState({ alterraData: data });
+                console.log(this.state.alterraData);
+            });
+    }
+
     render() {
+        const menuData = this.state.alterraData.menu;
+        if (!menuData) {
+            return <div>NO DATA</div>
+        }
+        else {
+            const menuMarckup = menuData.map((item, index) =>
+             <li key={index} className="alterra-navigation-list-item">
+                <a href={item.href}>{item.text}</a>
+            </li>
+        );
             return (
                 <nav>
                     <ScrollspyNav                        
@@ -18,26 +38,16 @@ class Menu extends Component {
                         headerBackground="true"
                     >
                     <ul className={"alterra-navigation"}>
-                        <li className="alterra-navigation-list-item">
-                            <a href="#home">Home</a>
-                        </li>
-                        <li className="alterra-navigation-list-item">
-                            <a href="#about">About</a>
-                        </li>
-                        <li className="alterra-navigation-list-item">
-                            <a href="#projects">Projects</a>
-                        </li>
-                        <li className="alterra-navigation-list-item">
-                            <a href="#blog">Blog</a>
-                        </li>
-                        <li className="alterra-navigation-list-item">
-                            <a href="#contacts">Contacts</a>
-                        </li>
+                        {menuMarckup}
                     </ul>
                     </ScrollspyNav>
                 </nav>
             );
+        
+        }
+    }
+    componentDidMount(){
+        this.getMyData();
     }
 }
-
 export default Menu;

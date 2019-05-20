@@ -3,6 +3,22 @@ import React from "react";
 import Slider from "react-slick";
 
 class SimpleSlider extends React.Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            alterraData: {}
+        }
+    }
+
+    getMyData(){
+        fetch('http://localhost:3000/alterra-data.json')
+            .then((res) => res.json())
+            .then((data) => {
+                this.setState({ alterraData: data });
+                console.log(this.state.alterraData);
+            });
+    }
+
     render() {
         var settings = {
             dots: true,
@@ -12,33 +28,29 @@ class SimpleSlider extends React.Component {
             slidesToShow: 1,
             slidesToScroll: 1,
             autoplay: true,
-            autoplaySpeed: 8000
+            autoplaySpeed: 3000
         };
-        return (
-            <Slider {...settings}>
-                <div>
-                    <h3 className={"slick-slide-heading"}>We solve your IT tasks.</h3>
-                    <p className={"slick-slide-description"}>Let AlterraSoft be your needs facilitator.
-                        Don't waste your time and money when it comes to technical expertise.
-                    </p>
-                    <img className={"slick-slide-image"} src={"http://localhost:3000/Slide-1.jpg"} alt={"1-st slide"}/>
+        const sliderData = this.state.alterraData.slider;
+        if (!sliderData) {
+            return <div>NO DATA</div>
+        }
+        else {
+            const sliderMarckup = sliderData.map((item, index) =>
+                <div key={index} >
+                    <h3 className={"slick-slide-heading"}>{item.heading}</h3>
+                    <p className={"slick-slide-description"}>{item.description}</p>
+                    <img className={"slick-slide-image"} src={item.img} alt={item.alt}/>
                 </div>
-                <div>
-                    <h3 className={"slick-slide-heading"}>Quality is our ultimate focus.</h3>
-                    <p className={"slick-slide-description"}>AlterraSoft drives your projects reliably.
-                        We always oversee  our projects with a full battery of tests to ensure the highest quality.
-                    </p>
-                    <img className={"slick-slide-image"} src={"http://localhost:3000/Slide-2.jpg"} alt={"2-nd slide"}/>
-                </div>
-                <div>
-                    <h3 className={"slick-slide-heading"}>Professional team for your ideas.</h3>
-                    <p className={"slick-slide-description"}>AlterraSoft is the perfect place for the guys passionate about technology.
-                        Our professional expertise can turn your ideas into real projects. Moreover, AlterraSoft can add new value to your existing projects.
-                    </p>
-                    <img className={"slick-slide-image"} src={"http://localhost:3000/Slide-3.jpg"} alt={"3-d slide"}/>
-                </div>
-            </Slider>
-        );
+            );
+            return (
+                <Slider {...settings}>
+                    {sliderMarckup}
+                </Slider>
+            );
+        }
+    }
+    componentDidMount(){
+        this.getMyData();
     }
 }
 

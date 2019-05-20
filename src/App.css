@@ -97,8 +97,24 @@ aside {
   z-index: 202;
 }
 
+.alterra-header>div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .dashed {
   background: #797979;
+}
+
+.dashed .alterra-logo {
+  max-width: 160px;
+}
+
+.dashed .alterra-navigation {
+  height: auto;
+  padding: 10px 0;
 }
 
 .alterra-navigation {
@@ -110,12 +126,16 @@ aside {
 
 .alterra-navigation-list-item {
   display: inline-block;
-  padding: 5px 10px;
+  padding: 5px 2.5px;
   margin: 2px;
   border-radius: 3px;
   background: transparent;
   height: 34px;
   line-height: 34px;
+}
+
+.alterra-navigation-list-item:last-of-type {
+  padding-right: 10px;
 }
 
 /*.alterra-navigation-list-item:hover {
@@ -137,13 +157,15 @@ aside {
   text-decoration: none;
   font-size: 16px;
   font-weight: bold;
-  padding: 0 20px;
+  padding: 0 23px;
+  border-radius: 3px;
 }
 
 .alterra-logo {
-  position: absolute;
+  /*position: absolute;
   top: 10px;
-  left: 25px;
+  left: 25px;*/
+  margin-left: 25px;
   width: 300px;
 }
 
@@ -332,22 +354,22 @@ aside {
   flex-basis: 65%;
 }
 
-.meters-wrapper>* {
+.meters-wrapper>div>* {
   display:block;
   margin: 0 auto;
 }
 
-.meters-wrapper>label {
+.meters-wrapper label {
   margin-bottom: 15px;
 }
 
-.meters-wrapper>progress {
+.meters-wrapper progress {
   width: 70%;
   margin-bottom: 25px;
   height: 22px;
 }
 
-.meters-wrapper>progress:after {
+.meters-wrapper progress:after {
   content: attr(value);
   font-size: 14px;
   line-height: 22px;
@@ -763,4 +785,8 @@ footer {
 
 .footer-contacts-social_link:visited {
   color: white;
+}
+
+#projects a:nth-child(4) p.portfolio-item-tags > span:nth-child(3) {
+  display: none;
 }
