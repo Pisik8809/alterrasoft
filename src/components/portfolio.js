@@ -1,5 +1,6 @@
 // portfolio.js
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 
 class Portfolio extends Component {
     constructor(props){
@@ -25,7 +26,7 @@ class Portfolio extends Component {
         }
         else {
             const portfolioMarckup = portfolioData.map((item, index) =>
-                <a key={index} className="portfolio-item" href={item.link}>
+                <Link key={index} className="portfolio-item" to={item.link}>
                     <img src={item.src} alt={item.alt}/>
                     <div className="portfolio-item-text">
                         <h3 className="portfolio-item-heading">{item.heading}</h3>
@@ -36,7 +37,7 @@ class Portfolio extends Component {
                             <span className="standing-out_tag">{item.tag3}</span>
                         </p>
                         </div>
-                </a> 
+                </Link>
         );
             return (
                 <section className="portfolio-block" id="projects">

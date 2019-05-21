@@ -84,7 +84,7 @@
     }
   ],
   "portfolio":[
-    {"link": "http://localhost:3000/", 
+    {"link": "article/1", 
       "src": "http://localhost:3000/dl1-4.jpg",
       "alt": "dl-img", 
       "heading": "Tiles and finishing configurator",
@@ -93,7 +93,7 @@
       "tag2": "Wizard",
       "tag3": "Online store"
     },
-    {"link": "http://localhost:3000/", 
+    {"link": "article/2", 
       "src": "http://localhost:3000/bf-uniq-rotate.jpg",
       "alt": "bf-img", 
       "heading": "Black Friday Offers Aggregator",
@@ -102,7 +102,7 @@
       "tag2": "Subscription",
       "tag3": "Promotions"
     },
-    {"link": "http://localhost:3000/", 
+    {"link": "article/3", 
       "src": "http://localhost:3000/dom1-5.jpg",
       "alt": "dom-img", 
       "heading": "Home Renovations",
@@ -111,7 +111,7 @@
       "tag2": "Marketplace",
       "tag3": "E-commerce"
     },
-    {"link": "http://localhost:3000/", 
+    {"link": "article/4", 
       "src": "http://localhost:3000/disc2-5.jpg",
       "alt": "discuss-img", 
       "heading": "Private Investors Discussion club",
@@ -120,7 +120,7 @@
       "tag2": "Chat",
       "tag3": ""
     },
-    {"link": "http://localhost:3000/", 
+    {"link": "article/5", 
       "src": "http://localhost:3000/dog1-6.jpg",
       "alt": "dog-img", 
       "heading": "Dog Owners Social Net",
@@ -129,7 +129,7 @@
       "tag2": "Chat",
       "tag3": "Geo-location"
     },
-    {"link": "http://localhost:3000/", 
+    {"link": "article/6", 
       "src": "http://localhost:3000/house1.jpg",
       "alt": "house-img", 
       "heading": "Home Climate Control",
@@ -138,7 +138,7 @@
       "tag2": "Remote control",
       "tag3": "Home climate"
     },
-    {"link": "http://localhost:3000/", 
+    {"link": "article/7", 
       "src": "http://localhost:3000/detox1.jpg",
       "alt": "detox-img", 
       "heading": "Detox marketplace/Health app",
@@ -147,7 +147,7 @@
       "tag2": "Healthy nutrition",
       "tag3": "Recovery"
     },
-    {"link": "http://localhost:3000/", 
+    {"link": "article/8", 
       "src": "http://localhost:3000/lemon1.jpg",
       "alt": "lemon-school-img", 
       "heading": "IT School app",
