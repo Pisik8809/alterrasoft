@@ -1,6 +1,7 @@
 // blog.js
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from "react-router-dom";
 
 class Blog extends Component {
     constructor(props){
@@ -27,10 +28,10 @@ class Blog extends Component {
         else {
             const blogMarckup = blogData.map((item, index) =>
             <div key={index} className="blog-block-item">
-                <a href="http://localhost:3000/" className="blog-block-link_with_img">
+                <Link to={item.href} className="blog-block-link_with_img">
                     <img src={item.first} alt="conf-cart"/>
                     <h4 className="blog-block-item_heading">{item.second}</h4>
-                </a>
+                </Link>
                 <a href="http://localhost:3000/" className="blog-block-item_category-link">
                     <p className="blog-block-item-category"><FontAwesomeIcon icon="tag" />IT articles</p>
                 </a>

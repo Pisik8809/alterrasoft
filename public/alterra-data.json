@@ -28,23 +28,28 @@
   "blog":[
     {"first": "http://localhost:3000/conf-1-5.jpg", 
       "second": "KharkivCss#4-2019", 
-      "third": "Kharkiv css #4 (2019)..."
+      "third": "Kharkiv css #4 (2019)...",
+      "href": "/article/1"
     },
     {"first": "http://localhost:3000/schema1-5.jpg", 
       "second": "Stages of Software Development Cycle", 
-      "third": "We introduce stages of development..."
+      "third": "We introduce stages of development...",
+      "href": "/article/2"
     },
     {"first": "http://localhost:3000/prices1-6.jpg", 
       "second": "IT  Software Development: How to Choose Provider", 
-      "third": "How to choose software developer for you project?..."
+      "third": "How to choose software developer for you project?...",
+      "href": "/article/3"
     },
     {"first": "http://localhost:3000/b2b1-5.jpg", 
       "second": "B2B Application Development", 
-      "third": "What is B2B model? Who need B2B app? B2B iOS application structure..."
+      "third": "What is B2B model? Who need B2B app? B2B iOS application structure...",
+      "href": "/article/4"
     },
     {"first": "http://localhost:3000/UaIT1-4.jpg", 
       "second": "Ukrainian software developers: reasons to hire", 
-      "third": "What main advantages of hiring Ukrainian IT companies?..."
+      "third": "What main advantages of hiring Ukrainian IT companies?...",
+      "href": "/article/5"
     }
   ],
   "about":[
@@ -84,7 +89,7 @@
     }
   ],
   "portfolio":[
-    {"link": "article/1", 
+    {"link": "portfolio/1", 
       "src": "http://localhost:3000/dl1-4.jpg",
       "alt": "dl-img", 
       "heading": "Tiles and finishing configurator",
@@ -93,7 +98,7 @@
       "tag2": "Wizard",
       "tag3": "Online store"
     },
-    {"link": "article/2", 
+    {"link": "portfolio/2", 
       "src": "http://localhost:3000/bf-uniq-rotate.jpg",
       "alt": "bf-img", 
       "heading": "Black Friday Offers Aggregator",
@@ -102,7 +107,7 @@
       "tag2": "Subscription",
       "tag3": "Promotions"
     },
-    {"link": "article/3", 
+    {"link": "portfolio/3", 
       "src": "http://localhost:3000/dom1-5.jpg",
       "alt": "dom-img", 
       "heading": "Home Renovations",
@@ -111,7 +116,7 @@
       "tag2": "Marketplace",
       "tag3": "E-commerce"
     },
-    {"link": "article/4", 
+    {"link": "portfolio/4", 
       "src": "http://localhost:3000/disc2-5.jpg",
       "alt": "discuss-img", 
       "heading": "Private Investors Discussion club",
@@ -120,7 +125,7 @@
       "tag2": "Chat",
       "tag3": ""
     },
-    {"link": "article/5", 
+    {"link": "portfolio/5", 
       "src": "http://localhost:3000/dog1-6.jpg",
       "alt": "dog-img", 
       "heading": "Dog Owners Social Net",
@@ -129,7 +134,7 @@
       "tag2": "Chat",
       "tag3": "Geo-location"
     },
-    {"link": "article/6", 
+    {"link": "portfolio/6", 
       "src": "http://localhost:3000/house1.jpg",
       "alt": "house-img", 
       "heading": "Home Climate Control",
@@ -138,7 +143,7 @@
       "tag2": "Remote control",
       "tag3": "Home climate"
     },
-    {"link": "article/7", 
+    {"link": "portfolio/7", 
       "src": "http://localhost:3000/detox1.jpg",
       "alt": "detox-img", 
       "heading": "Detox marketplace/Health app",
@@ -147,7 +152,7 @@
       "tag2": "Healthy nutrition",
       "tag3": "Recovery"
     },
-    {"link": "article/8", 
+    {"link": "portfolio/8", 
       "src": "http://localhost:3000/lemon1.jpg",
       "alt": "lemon-school-img", 
       "heading": "IT School app",

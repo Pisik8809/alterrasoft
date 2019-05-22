@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import AllInOne from './components/all-in-one';
 import PortfolioItem from './components/PortfolioItem';
+import BlogItem from './components/BlogItem';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import { faObjectGroup, faFolderOpen, faFile, faTv, faPalette, faDesktop, faWrench, faCog, faTag} from '@fortawesome/free-solid-svg-icons';
@@ -19,7 +20,8 @@ class App extends Component {
         <Router>
           <Switch>
             <Route path="/" exact={true} component={AllInOne}/>
-            <Route path="/article/:number" component={PortfolioItem}/>
+            <Route path="/portfolio/:number" component={PortfolioItem}/>
+            <Route path="/article/:number" component={BlogItem}/>
           </Switch>
         </Router>
       );
