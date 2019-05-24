@@ -1,0 +1,165 @@
+{
+  "menu": [
+    {"href": "#home", "text": "Home"},
+    {"href": "#about", "text": "About"},
+    {"href": "#projects", "text": "Projects"},
+    {"href": "#blog", "text": "Blog"},
+    {"href": "#contacts", "text": "Contacts"}
+  ],
+  "slider": [
+    {"heading" : "We solve your IT tasks.", 
+      "description": "Let AlterraSoft be your needs facilitator.\n Don't waste your time and money when it comes to technical expertise.", 
+      "img": "http://localhost:3000/Slide-1.jpg", 
+      "alt": "1-st slide"},
+    {"heading" : "Quality is our ultimate focus.", 
+      "description": "AlterraSoft drives your projects reliably.\n We always oversee  our projects with a full battery of tests to ensure the highest quality.", 
+      "img": "http://localhost:3000/Slide-2.jpg", 
+      "alt": "2-nd slide"},
+    {"heading" : "Professional team for your ideas.", 
+      "description": "AlterraSoft is the perfect place for the guys passionate about technology. \n Our professional expertise can turn your ideas into real projects. Moreover, AlterraSoft can add new value to your existing projects.", 
+      "img": "http://localhost:3000/Slide-3.jpg", 
+      "alt": "3-d slide"}
+  ],
+  "meters": [
+    {"forId": "trend", "heading":"Trend folowing", "title": "75%", "value": "75"},
+    {"forId": "code-quality", "heading":"Code Quality", "title": "99%", "value": "99"},
+    {"forId": "predictability", "heading":"Predictability", "title": "85%", "value": "85"}
+  ],
+  "blog":[
+    {"first": "http://localhost:3000/conf-1-5.jpg", 
+      "second": "KharkivCss#4-2019", 
+      "third": "Kharkiv css #4 (2019)...",
+      "href": "/article/1"
+    },
+    {"first": "http://localhost:3000/schema1-5.jpg", 
+      "second": "Stages of Software Development Cycle", 
+      "third": "We introduce stages of development...",
+      "href": "/article/2"
+    },
+    {"first": "http://localhost:3000/prices1-6.jpg", 
+      "second": "IT  Software Development: How to Choose Provider", 
+      "third": "How to choose software developer for you project?...",
+      "href": "/article/3"
+    },
+    {"first": "http://localhost:3000/b2b1-5.jpg", 
+      "second": "B2B Application Development", 
+      "third": "What is B2B model? Who need B2B app? B2B iOS application structure...",
+      "href": "/article/4"
+    },
+    {"first": "http://localhost:3000/UaIT1-4.jpg", 
+      "second": "Ukrainian software developers: reasons to hire", 
+      "third": "What main advantages of hiring Ukrainian IT companies?...",
+      "href": "/article/5"
+    }
+  ],
+  "about":[
+    {"first": "object-group", 
+      "second": "Development", 
+      "third": "Our developers are experienced in several programming languages including HTML CSS, PHP, JavaScript, React JS, Objective-C, Swift, React Native and Flutter which allows us to develop for a variety of platforms including Web, Android, iOS and Mobile Web."
+    },
+    {"first": "folder-open", 
+      "second": "Stages of Software Development Cycle", 
+      "third": " We specialize in UX/UI design and can provide recommendations on how products should look and flow in order to drive conversions while upholding strong branding guidelines and best practices. Have your digital exterior handled with care. Our designers’ tastefulness combined with thorough audits, will make your solution effective and popular."
+    },
+    {"first": "file", 
+      "second": "IT  Software Development: How to Choose Provider", 
+      "third": "We work closely with our customers to identify and execute the best strategies for resolving their complicated development needs. Ask our professionals about any issues and get them successfully resolved. All your technical questions will be fully answered, by our reliable team. They can also guide you through any technical challenges you are facing now."
+    },
+    {"first": "tv", 
+      "second": "B2B Application Development", 
+      "third": "Grow your startup from a raw idea to a  running project. Share your ideas with our team and we’ll add our expertise to facilitate their creation! We provide recommendations on product management and prioritization to best position your company to meet their objectives and drive success metrics in an increasingly competitive startups market."
+    }
+  ],
+  "technologies":[
+    {"first": "palette", 
+      "second": "Sketch", 
+      "third": "Design prototyping takes your raw idea and turns them into sketches that are ready to go further. We're open to discuss,advise, and create at the same time."
+    },
+    {"first": "desktop", 
+      "second": "Design", 
+      "third": "We always suggest different design options for you to choose from. You choose the best design that defines the best solution for you."
+    },
+    {"first": "wrench", 
+      "second": "Testing", 
+      "third": "TDD can be applied to your project from the beginning as well as testing after the implementation phase by phase."
+    },
+    {"first": "cog", 
+      "second": "Developmnt", 
+      "third": "Project development process follows the latest industry standards and approaches."
+    }
+  ],
+  "portfolio":[
+    {"link": "portfolio/1", 
+      "src": "http://localhost:3000/dl1-4.jpg",
+      "alt": "dl-img", 
+      "heading": "Tiles and finishing configurator",
+      "category": "Web development",
+      "tag1": "E-commerce",
+      "tag2": "Wizard",
+      "tag3": "Online store"
+    },
+    {"link": "portfolio/2", 
+      "src": "http://localhost:3000/bf-uniq-rotate.jpg",
+      "alt": "bf-img", 
+      "heading": "Black Friday Offers Aggregator",
+      "category": "Web development",
+      "tag1": "Aggregator",
+      "tag2": "Subscription",
+      "tag3": "Promotions"
+    },
+    {"link": "portfolio/3", 
+      "src": "http://localhost:3000/dom1-5.jpg",
+      "alt": "dom-img", 
+      "heading": "Home Renovations",
+      "category": "Web development",
+      "tag1": "Aggregator",
+      "tag2": "Marketplace",
+      "tag3": "E-commerce"
+    },
+    {"link": "portfolio/4", 
+      "src": "http://localhost:3000/disc2-5.jpg",
+      "alt": "discuss-img", 
+      "heading": "Private Investors Discussion club",
+      "category": "Web development",
+      "tag1": "Discussion platform",
+      "tag2": "Chat",
+      "tag3": ""
+    },
+    {"link": "portfolio/5", 
+      "src": "http://localhost:3000/dog1-6.jpg",
+      "alt": "dog-img", 
+      "heading": "Dog Owners Social Net",
+      "category": "Mobile development",
+      "tag1": "Social net",
+      "tag2": "Chat",
+      "tag3": "Geo-location"
+    },
+    {"link": "portfolio/6", 
+      "src": "http://localhost:3000/house1.jpg",
+      "alt": "house-img", 
+      "heading": "Home Climate Control",
+      "category": "Mobile development",
+      "tag1": "Smart home",
+      "tag2": "Remote control",
+      "tag3": "Home climate"
+    },
+    {"link": "portfolio/7", 
+      "src": "http://localhost:3000/detox1.jpg",
+      "alt": "detox-img", 
+      "heading": "Detox marketplace/Health app",
+      "category": "Mobile development",
+      "tag1": "Detox",
+      "tag2": "Healthy nutrition",
+      "tag3": "Recovery"
+    },
+    {"link": "portfolio/8", 
+      "src": "http://localhost:3000/lemon1.jpg",
+      "alt": "lemon-school-img", 
+      "heading": "IT School app",
+      "category": "Mobile development",
+      "tag1": "IT Courses",
+      "tag2": "E-learning",
+      "tag3": "Lessons"
+    }   
+  ]
+}
