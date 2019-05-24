@@ -15,7 +15,7 @@ class BlogItem extends Component {
         let contentHeading = "heading";
         let contentText = "test";
         let articleImg = "http://localhost:3000/lemon1.jpg";
-        if(this.props.location.pathname === "/article/5") {
+        if(this.props.location.pathname === "/article/1") {
             articleImg = "http://localhost:3000/conf-1-5.jpg";
             contentHeading = "KharkivCss#4-2019";
             contentText = <div><p>This week our front-end developer visited Kharkov CSS#4 conference, it was interesting 
@@ -33,7 +33,7 @@ class BlogItem extends Component {
             sharing that plays a key role for enhancing page perfomance on our projects we run inside our own dev center here. 
             We stay in hope that such an event will bring better results for UI delivery in future.</p></div>;
         }
-        if(this.props.location.pathname === "/article/4") {
+        if(this.props.location.pathname === "/article/2") {
             contentHeading = "Stages of Software Development Cycle";
             contentText = <div>
             <p>SDLC (Software Development Life Cycle) is a series of six main phases through which any software system passes. 
@@ -119,13 +119,13 @@ class BlogItem extends Component {
                     than $25 per hour. Everything that is under $25 hourly rate should be a warning signal for the choice maker. 
                     To safeguard yourself against any risks, pick up your perfect applicant based on their competitive and relevant portfolio, 
                     communication and reasonable rates. We hope our article was useful to you and answered all your unclearnesses.</li>
-                <a href="https://alterrasoft.com/#contact">Let us get in touch and discuss your app idea, please ping us a message under 
+                <a href="http://localhost:3000/#contacts">Let us get in touch and discuss your app idea, please ping us a message under 
                 Contact us section</a>
                 </ul>
                 </div>;
             articleImg = "http://localhost:3000/prices1-6.jpg";
         }
-        if(this.props.location.pathname === "/article/2") {
+        if(this.props.location.pathname === "/article/4") {
             contentHeading = "B2B Application Development";
             contentText = <div>
                 <p>In today`s fast-changing world the scope of mobile technologies has increased dramatically. 
@@ -191,12 +191,12 @@ class BlogItem extends Component {
                 <p>To sum up, as you can see, B2B applications can be really useful to run business smoothly and with maximum 
                     quality, as such apps make the work more efficient and consequently generate income. We hope that the article 
                     was useful to you and provided you with all information you were interested in.<br/>
-                <a href="https://alterrasoft.com/#contact">Let us get in touch and discuss your app idea, please ping us a message 
+                <a href="http://localhost:3000/#contacts">Let us get in touch and discuss your app idea, please ping us a message 
                 under Contact us section</a></p>
             </div>;
             articleImg = "http://localhost:3000/b2b1-5.jpg";
         }
-        if(this.props.location.pathname === "/article/1") {
+        if(this.props.location.pathname === "/article/5") {
             contentHeading = "Ukrainian software developers: reasons to hire";
             contentText = <div>
                 <p>Ukraine has become an increasingly popular software development outsourcing destination, especially 
@@ -238,7 +238,7 @@ class BlogItem extends Component {
                     who love their job and keen on constant development of their personalities.<br/>
                 We hope our article was useful to you. So do not hesitate while choosing Ukrainian software developers to 
                 turn your ideas into projects.<br/>
-                <a href="https://alterrasoft.com/#contact">Let us get in touch and discuss your app idea, please ping us 
+                <a href="http://localhost:3000/#contacts">Let us get in touch and discuss your app idea, please ping us 
                 a message under Contact us section</a></p>
             </div>;
             articleImg = "http://localhost:3000/UaIT1-4.jpg";
@@ -248,6 +248,7 @@ class BlogItem extends Component {
         });*/
         return(
             <div className="article-page-block">
+                <a className="route-to-home" href="http://localhost:3000">Return to Home page</a>
                 <h2 className="article-page-heading_top">{contentHeading}</h2>
                 <img className="article-main-img" src={articleImg} alt="article-img"/>
                 <div className="article-page-content-wrapper">

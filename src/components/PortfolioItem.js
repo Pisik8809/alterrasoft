@@ -129,6 +129,7 @@ class PortfolioItem extends Component {
         );
         return(
             <div className="portfolio-page-block">
+            <a className="route-to-home" href="http://localhost:3000">Return to Home page</a>
             <h2 className="portfolio-page-heading_top">{contentHeading}</h2>
             <Slider className="portfolio-page-slider" {...settings}>
                 {sliderMarckup}

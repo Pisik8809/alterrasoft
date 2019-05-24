@@ -7,6 +7,7 @@ class Menu extends Component {
         this.state = {
             alterraData: {}
         }
+        
     }
 
     getMyData(){
