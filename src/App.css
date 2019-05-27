@@ -98,10 +98,11 @@ aside {
 }
 
 .alterra-header>div {
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0;
 }
 
 .alterra-header .dashed {
@@ -916,7 +917,40 @@ footer {
   color: #0093E9;
 }
 
-@media all and (max-width: 450px) {
+@media (min-width: 768px) and (max-width: 1024px) {
+  .portfolio-item {
+    flex-basis: 50%;
+  }
+  .blog-block-item {
+    flex-basis: 40%;
+  }
+}
+
+@media (min-width: 415px) and (max-width: 768px) {
+  .alterra-logo {
+    width: 200px;
+  }
+  .slick-slide-heading {
+    top: 30%;
+  }
+  .about-section-grid,
+  .techno-items-global-wrapper {
+    flex-wrap: wrap;
+  }
+  .technoly-item-wrapper,
+  .about-section-item {
+    flex-basis: 40%;
+    margin-top: 25px;
+  }
+  .meters-heading {
+    padding-left: 25px;
+  }
+  .contact-form-block {
+    padding: 0 25px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 415px) {
   .about-section-grid,
   .techno-items-global-wrapper {
     flex-wrap: wrap;
@@ -1055,4 +1089,36 @@ footer {
   .article-page-block ol>li, .article-page-block ul>li {
     transform: translate(0, 0);
   }
+}
+
+@media (min-width: 320px) and (max-width: 376px) {
+  .technologies-block-heading,
+  .about-heading,
+  .meters-heading,
+  .portfolio-heading,
+  .blog-block-heading {
+    font-size: 24px;
+    padding: 0 25px;
+  }
+  .blog-block-heading,
+  .meters-wrapper {
+    padding-top: 25px;
+  }
+  .slick-slide-heading {
+    font-size: 24px;
+    line-height: 24px;
+    top: 15px;
+  }
+  .slick-slide-description {
+    top: 90px;
+    font-size: 8.5pt;
+    line-height: 10pt;
+  }
+  .slick-arrow.slick-next, 
+  .slick-arrow.slick-prev {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+  }
+
 }
