@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/shpilka-maxim-alterrasoft/alterrasoft/static/css/main.82d60c66.chunk.css",
-    "main.js": "/shpilka-maxim-alterrasoft/alterrasoft/static/js/main.345a9e1e.chunk.js",
-    "main.js.map": "/shpilka-maxim-alterrasoft/alterrasoft/static/js/main.345a9e1e.chunk.js.map",
-    "runtime~main.js": "/shpilka-maxim-alterrasoft/alterrasoft/static/js/runtime~main.22d8408c.js",
-    "runtime~main.js.map": "/shpilka-maxim-alterrasoft/alterrasoft/static/js/runtime~main.22d8408c.js.map",
-    "static/css/2.ca3737e0.chunk.css": "/shpilka-maxim-alterrasoft/alterrasoft/static/css/2.ca3737e0.chunk.css",
-    "static/js/2.51bd0393.chunk.js": "/shpilka-maxim-alterrasoft/alterrasoft/static/js/2.51bd0393.chunk.js",
-    "static/js/2.51bd0393.chunk.js.map": "/shpilka-maxim-alterrasoft/alterrasoft/static/js/2.51bd0393.chunk.js.map",
-    "index.html": "/shpilka-maxim-alterrasoft/alterrasoft/index.html",
-    "precache-manifest.a8b80130b451d0f79747e477ba300e95.js": "/shpilka-maxim-alterrasoft/alterrasoft/precache-manifest.a8b80130b451d0f79747e477ba300e95.js",
-    "service-worker.js": "/shpilka-maxim-alterrasoft/alterrasoft/service-worker.js",
-    "static/css/2.ca3737e0.chunk.css.map": "/shpilka-maxim-alterrasoft/alterrasoft/static/css/2.ca3737e0.chunk.css.map",
-    "static/css/main.82d60c66.chunk.css.map": "/shpilka-maxim-alterrasoft/alterrasoft/static/css/main.82d60c66.chunk.css.map",
-    "static/media/logo.svg": "/shpilka-maxim-alterrasoft/alterrasoft/static/media/logo.81c88265.svg",
-    "static/media/App.css": "/shpilka-maxim-alterrasoft/alterrasoft/static/media/slick.f97e3bbf.svg"
+    "main.css": "/Pisik8809/alterrasoft-build/static/css/main.82d60c66.chunk.css",
+    "main.js": "/Pisik8809/alterrasoft-build/static/js/main.1bf92685.chunk.js",
+    "main.js.map": "/Pisik8809/alterrasoft-build/static/js/main.1bf92685.chunk.js.map",
+    "runtime~main.js": "/Pisik8809/alterrasoft-build/static/js/runtime~main.9f4712fb.js",
+    "runtime~main.js.map": "/Pisik8809/alterrasoft-build/static/js/runtime~main.9f4712fb.js.map",
+    "static/css/2.0c27fcea.chunk.css": "/Pisik8809/alterrasoft-build/static/css/2.0c27fcea.chunk.css",
+    "static/js/2.51bd0393.chunk.js": "/Pisik8809/alterrasoft-build/static/js/2.51bd0393.chunk.js",
+    "static/js/2.51bd0393.chunk.js.map": "/Pisik8809/alterrasoft-build/static/js/2.51bd0393.chunk.js.map",
+    "index.html": "/Pisik8809/alterrasoft-build/index.html",
+    "precache-manifest.c2b90a8d52c6c33180440415912665cc.js": "/Pisik8809/alterrasoft-build/precache-manifest.c2b90a8d52c6c33180440415912665cc.js",
+    "service-worker.js": "/Pisik8809/alterrasoft-build/service-worker.js",
+    "static/css/2.0c27fcea.chunk.css.map": "/Pisik8809/alterrasoft-build/static/css/2.0c27fcea.chunk.css.map",
+    "static/css/main.82d60c66.chunk.css.map": "/Pisik8809/alterrasoft-build/static/css/main.82d60c66.chunk.css.map",
+    "static/media/logo.svg": "/Pisik8809/alterrasoft-build/static/media/logo.81c88265.svg",
+    "static/media/App.css": "/Pisik8809/alterrasoft-build/static/media/slick.f97e3bbf.svg"
   }
 }
