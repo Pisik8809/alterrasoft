@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.82d60c66.chunk.css",
-    "main.js": "/static/js/main.da430443.chunk.js",
-    "main.js.map": "/static/js/main.da430443.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-    "static/css/2.cdaf15d1.chunk.css": "/static/css/2.cdaf15d1.chunk.css",
-    "static/js/2.51bd0393.chunk.js": "/static/js/2.51bd0393.chunk.js",
-    "static/js/2.51bd0393.chunk.js.map": "/static/js/2.51bd0393.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.8ddc5a733debb74de0b07e5c04a3a761.js": "/precache-manifest.8ddc5a733debb74de0b07e5c04a3a761.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.cdaf15d1.chunk.css.map": "/static/css/2.cdaf15d1.chunk.css.map",
-    "static/css/main.82d60c66.chunk.css.map": "/static/css/main.82d60c66.chunk.css.map",
-    "static/media/logo.svg": "/static/media/logo.81c88265.svg",
-    "static/media/App.css": "/static/media/slick.f97e3bbf.svg"
+    "main.css": "/shpilka-maxim-alterrasoft/alterrasoft/static/css/main.82d60c66.chunk.css",
+    "main.js": "/shpilka-maxim-alterrasoft/alterrasoft/static/js/main.345a9e1e.chunk.js",
+    "main.js.map": "/shpilka-maxim-alterrasoft/alterrasoft/static/js/main.345a9e1e.chunk.js.map",
+    "runtime~main.js": "/shpilka-maxim-alterrasoft/alterrasoft/static/js/runtime~main.22d8408c.js",
+    "runtime~main.js.map": "/shpilka-maxim-alterrasoft/alterrasoft/static/js/runtime~main.22d8408c.js.map",
+    "static/css/2.ca3737e0.chunk.css": "/shpilka-maxim-alterrasoft/alterrasoft/static/css/2.ca3737e0.chunk.css",
+    "static/js/2.51bd0393.chunk.js": "/shpilka-maxim-alterrasoft/alterrasoft/static/js/2.51bd0393.chunk.js",
+    "static/js/2.51bd0393.chunk.js.map": "/shpilka-maxim-alterrasoft/alterrasoft/static/js/2.51bd0393.chunk.js.map",
+    "index.html": "/shpilka-maxim-alterrasoft/alterrasoft/index.html",
+    "precache-manifest.a8b80130b451d0f79747e477ba300e95.js": "/shpilka-maxim-alterrasoft/alterrasoft/precache-manifest.a8b80130b451d0f79747e477ba300e95.js",
+    "service-worker.js": "/shpilka-maxim-alterrasoft/alterrasoft/service-worker.js",
+    "static/css/2.ca3737e0.chunk.css.map": "/shpilka-maxim-alterrasoft/alterrasoft/static/css/2.ca3737e0.chunk.css.map",
+    "static/css/main.82d60c66.chunk.css.map": "/shpilka-maxim-alterrasoft/alterrasoft/static/css/main.82d60c66.chunk.css.map",
+    "static/media/logo.svg": "/shpilka-maxim-alterrasoft/alterrasoft/static/media/logo.81c88265.svg",
+    "static/media/App.css": "/shpilka-maxim-alterrasoft/alterrasoft/static/media/slick.f97e3bbf.svg"
   }
 }
