@@ -1,5 +1,6 @@
 // portfolio.js
 import React, { Component } from 'react';
+import GlobalUrl from './global-url';
 import { Link } from "react-router-dom";
 
 class Portfolio extends Component {
@@ -11,7 +12,7 @@ class Portfolio extends Component {
     }
 
     getMyData(){
-        fetch('http://localhost:3000/alterra-data.json')
+        fetch(`${GlobalUrl}alterra-data.json`)
             .then((res) => res.json())
             .then((data) => {
                 this.setState({ alterraData: data });
@@ -27,7 +28,7 @@ class Portfolio extends Component {
         else {
             const portfolioMarckup = portfolioData.map((item, index) =>
                 <Link key={index} className="portfolio-item" to={item.link}>
-                    <img src={item.src} alt={item.alt}/>
+                    <img src={`${GlobalUrl}${item.src}`} alt={item.alt}/>
                     <div className="portfolio-item-text">
                         <h3 className="portfolio-item-heading">{item.heading}</h3>
                         <p className="portfolio-item-category">{item.category}</p>

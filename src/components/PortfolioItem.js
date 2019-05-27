@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import GlobalUrl from './global-url';
 import Slider from "react-slick";
 import Footer from './footer';
 
@@ -37,12 +38,12 @@ class PortfolioItem extends Component {
             projects of such size. So for the customers who want small or up to mid-size projects, we can recommend 
             this way of implementation.`;
             technologies = "iOS, Firebase";
-            allImgsList = [{img: "http://localhost:3000/lemon1.jpg", alt: "portfolio-img-1"}, 
-            {img: "http://localhost:3000/e-learning-1-4.jpg", alt: "portfolio-img-2"}, 
-            {img: "http://localhost:3000/e-learning-2-4.jpg", alt: "portfolio-img-3"},
-            {img: "http://localhost:3000/e-learning-3-4.jpg", alt: "portfolio-img-4"},
-            {img: "http://localhost:3000/e-learning-4-4.jpg", alt: "portfolio-img-5"},
-            {img: "http://localhost:3000/e-learning-5-4.jpg", alt: "portfolio-img-5"}];
+            allImgsList = [{img: `${GlobalUrl}lemon1.jpg`, alt: "portfolio-img-1"}, 
+            {img: `${GlobalUrl}e-learning-1-4.jpg`, alt: "portfolio-img-2"}, 
+            {img: `${GlobalUrl}e-learning-2-4.jpg`, alt: "portfolio-img-3"},
+            {img: `${GlobalUrl}e-learning-3-4.jpg`, alt: "portfolio-img-4"},
+            {img: `${GlobalUrl}e-learning-4-4.jpg`, alt: "portfolio-img-5"},
+            {img: `${GlobalUrl}e-learning-5-4.jpg`, alt: "portfolio-img-5"}];
         }
         if(this.props.location.pathname === "/portfolio/7") {
             contentHeading = "Detox marketplace/Health app";
@@ -52,7 +53,7 @@ class PortfolioItem extends Component {
             Anyway, you can refer to other materials provided by the app and combine them to turn your 
             life into a healthy path.`;
             technologies = "iOS, Firebase";
-            allImgsList = [{img: "http://localhost:3000/detox1.jpg", alt: "portfolio-img-1"}];
+            allImgsList = [{img: `${GlobalUrl}detox1.jpg`, alt: "portfolio-img-1"}];
         }
         if(this.props.location.pathname === "/portfolio/6") {
             contentHeading = "Home Climate Control";
@@ -63,8 +64,8 @@ class PortfolioItem extends Component {
             the system is configured right up to them. You can address a few rooms or the entire house. 
             So with the system components all together you will never feel uncomfortable stepping into your smart home.`;
             technologies = "React Native";
-            allImgsList = [{img: "http://localhost:3000/house1.jpg", alt: "portfolio-img-1"},  
-            {img: "http://localhost:3000/house2.jpg", alt: "tportfolio-img-2"}];
+            allImgsList = [{img: `${GlobalUrl}house1.jpg`, alt: "portfolio-img-1"},  
+            {img: `${GlobalUrl}house2.jpg`, alt: "tportfolio-img-2"}];
         }
         if(this.props.location.pathname === "/portfolio/5") {
             contentHeading = "Dog Owners Social Net";
@@ -75,9 +76,9 @@ class PortfolioItem extends Component {
             Whether user’s got a question, or needs advice from another parent, or even wants to meet in real 
             life and hang out, this app is the perfect point to start it all.`;
             technologies = "iOS, NodeJS";
-            allImgsList = [{img: "http://localhost:3000/dog1-6.jpg", alt: "portfolio-img-1"}, 
-            {img: "http://localhost:3000/dog2-4.jpg", alt: "portfolio-img-2"}, 
-            {img: "http://localhost:3000/dog3-4.jpg", alt: "portfolio-img-3"}];
+            allImgsList = [{img: `${GlobalUrl}dog1-6.jpg`, alt: "portfolio-img-1"}, 
+            {img: `${GlobalUrl}dog2-4.jpg`, alt: "portfolio-img-2"}, 
+            {img: `${GlobalUrl}dog3-4.jpg`, alt: "portfolio-img-3"}];
         }
         if(this.props.location.pathname === "/portfolio/4") {
             contentHeading = "Private Investors Discussion club";
@@ -86,8 +87,8 @@ class PortfolioItem extends Component {
             Therefore, the specialty of these meetings is the emphasis on the easiness and convenience of creating 
             personal connections for investing.`;
             technologies = "React Native";
-            allImgsList = [{img: "http://localhost:3000/disc2-5.jpg", alt: "portfolio-img-1"}, 
-            {img: "http://localhost:3000/disc1-5.jpg", alt: "portfolio-img-2"}];
+            allImgsList = [{img: `${GlobalUrl}disc2-5.jpg`, alt: "portfolio-img-1"}, 
+            {img: `${GlobalUrl}disc1-5.jpg`, alt: "portfolio-img-2"}];
         }
         if(this.props.location.pathname === "/portfolio/3") {
             contentHeading = "Home Renovations";
@@ -96,9 +97,9 @@ class PortfolioItem extends Component {
             successfully on time. That’s why the website focuses on evaluating workers’ skills and quality 
             of the work performed.`;
             technologies = "PHP, JS";
-            allImgsList = [{img: "http://localhost:3000/dom1-5.jpg", alt: "portfolio-img-1"}, 
-            {img: "http://localhost:3000/dom2-5.jpg", alt: "portfolio-img-2"}, 
-            {img: "http://localhost:3000/dom3-6.jpg", alt: "portfolio-img-3"}];
+            allImgsList = [{img: `${GlobalUrl}dom1-5.jpg`, alt: "portfolio-img-1"}, 
+            {img: `${GlobalUrl}dom2-5.jpg`, alt: "portfolio-img-2"}, 
+            {img: `${GlobalUrl}dom3-6.jpg`, alt: "portfolio-img-3"}];
         }
         if(this.props.location.pathname === "/portfolio/2") {
             contentHeading = "Black Friday Offers Aggregator";
@@ -107,9 +108,9 @@ class PortfolioItem extends Component {
             that will be available right at that time. So the users can subscribe and get notified in order to be ready 
             beforehand.`;
             technologies = "JS";
-            allImgsList = [{img: "http://localhost:3000/bf-uniq-rotate.jpg", alt: "portfolio-img-1"}, 
-            {img: "http://localhost:3000/bf3-4.jpg", alt: "portfolio-img-2"}, 
-            {img: "http://localhost:3000/bf2-4-1.jpg", alt: "portfolio-img-3"}];
+            allImgsList = [{img: `${GlobalUrl}bf-uniq-rotate.jpg`, alt: "portfolio-img-1"}, 
+            {img: `${GlobalUrl}bf3-4.jpg`, alt: "portfolio-img-2"}, 
+            {img: `${GlobalUrl}bf2-4-1.jpg`, alt: "portfolio-img-3"}];
         }
         if(this.props.location.pathname === "/portfolio/1") {
             contentHeading = "Tiles and finishing configurator";
@@ -118,9 +119,9 @@ class PortfolioItem extends Component {
             orders and a user-friendly selection path on UI side to attract customers and help them find the suitable design 
             solution to be applied.`;
             technologies = "PHP, JS";
-            allImgsList = [{img: "http://localhost:3000/dl1-4.jpg", alt: "portfolio-img-1"}, 
-            {img: "http://localhost:3000/dl2-4.jpg", alt: "portfolio-img-2"}, 
-            {img: "http://localhost:3000/dl3-4.jpg", alt: "portfolio-img-3"}];
+            allImgsList = [{img: `${GlobalUrl}dl1-4.jpg`, alt: "portfolio-img-1"}, 
+            {img: `${GlobalUrl}dl2-4.jpg`, alt: "portfolio-img-2"}, 
+            {img: `${GlobalUrl}dl3-4.jpg`, alt: "portfolio-img-3"}];
         }
         const sliderMarckup = allImgsList.map((item, index) =>
                 <div key={index} >
@@ -129,7 +130,7 @@ class PortfolioItem extends Component {
         );
         return(
             <div className="portfolio-page-block">
-            <a className="route-to-home" href="http://localhost:3000">Return to Home page</a>
+            <a className="route-to-home" href={GlobalUrl}>Return to Home page</a>
             <h2 className="portfolio-page-heading_top">{contentHeading}</h2>
             <Slider className="portfolio-page-slider" {...settings}>
                 {sliderMarckup}

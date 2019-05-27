@@ -1,5 +1,6 @@
 // about.js
 import React, { Component } from 'react';
+import GlobalUrl from './global-url';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
@@ -12,7 +13,7 @@ class About extends Component {
     }
 
     getMyData(){
-        fetch('http://localhost:3000/alterra-data.json')
+        fetch(`${GlobalUrl}alterra-data.json`)
             .then((res) => res.json())
             .then((data) => {
                 this.setState({ alterraData: data });

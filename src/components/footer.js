@@ -1,5 +1,6 @@
 // footer.js
 import React, { Component } from 'react';
+import GlobalUrl from './global-url';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faLinkedin, faInstagram } from "@fortawesome/free-brands-svg-icons"
 
@@ -9,7 +10,7 @@ class Footer extends Component {
             <footer>
             <div className="contacts-section">
                 <div className="contacts-section_item">
-                    <img src="http://localhost:3000/footer-logo.png" alt="alterrasoft-logo"/>
+                    <img src={`${GlobalUrl}footer-logo.png`} alt="alterrasoft-logo"/>
                 </div>
                 <div className="contacts-section_item">
                     <h3 className="footer-contact-heading">Contacts</h3>

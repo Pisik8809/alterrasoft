@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import GlobalUrl from './global-url';
 import Footer from './footer';
 //import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -12,21 +13,21 @@ class BlogItem extends Component {
     
 
     render() {
-        let contentHeading = "heading";
-        let contentText = "test";
-        let articleImg = "http://localhost:3000/lemon1.jpg";
+        let contentHeading = "Not found request article";
+        let contentText = "Maybe you do mistake in url or this article was deleted";
+        let articleImg = `${GlobalUrl}lemon1.jpg`;
         if(this.props.location.pathname === "/article/1") {
-            articleImg = "http://localhost:3000/conf-1-5.jpg";
+            articleImg = `${GlobalUrl}conf-1-5.jpg`;
             contentHeading = "KharkivCss#4-2019";
             contentText = <div><p>This week our front-end developer visited Kharkov CSS#4 conference, it was interesting 
             to meet community and discuss WCAG, web standards, how to enhance delivery via proper logging, 
-            and CSS tips and tricks</p><img src="http://localhost:3000/conf-2.jpg" alt="test"/>
+            and CSS tips and tricks</p><img src={`${GlobalUrl}conf-2.jpg`} alt="test"/>
             <p>The Conference took place in Fabrika space, in Kharkov, Ukraine. It was a great chance to meet famous 
             industry speakers, such as computer scientist Chris Lilley (specializing on web fonts and svg graphics) 
-            and Lea Verou.</p><img src="http://localhost:3000/conf-4.jpg" alt="test"/>
+            and Lea Verou.</p><img src={`${GlobalUrl}conf-4.jpg`} alt="test"/>
             <p> It was also interesting to attend lectures by Anton Nemzev (regarding page load speed optimization via 
             new methods at Node JS server side) and Nikita Dubko (lecture regarding API — CSS Houdini).
-            <img src="http://localhost:3000/conf-3.jpg" alt="test"/><img src="http://localhost:3000/conf-5.jpg" alt="test"/>
+            <img src={`${GlobalUrl}conf-3.jpg`} alt="test"/><img src={`${GlobalUrl}conf-5.jpg`} alt="test"/>
             There was a great chance to discuss concepts and details with speakers and other attendees under 
             live chat arranged on the conference. And there were also separate class rooms arranged for live discussions. 
             It was a perfect chance to speak with industry leaders. It was great opportunity for front-end knowledge 
@@ -75,7 +76,7 @@ class BlogItem extends Component {
                 of IT companies to create a high-quality program. We hope the article was useful for you. 
                 Feel free to contact us for more details.</p>
             </div>;
-            articleImg = "http://localhost:3000/schema1-5.jpg";
+            articleImg = `${GlobalUrl}schema1-5.jpg`;
         }
         if(this.props.location.pathname === "/article/3") {
             contentHeading = "IT Software Development: How to Choose Provider";
@@ -119,11 +120,11 @@ class BlogItem extends Component {
                     than $25 per hour. Everything that is under $25 hourly rate should be a warning signal for the choice maker. 
                     To safeguard yourself against any risks, pick up your perfect applicant based on their competitive and relevant portfolio, 
                     communication and reasonable rates. We hope our article was useful to you and answered all your unclearnesses.</li>
-                <a href="http://localhost:3000/#contacts">Let us get in touch and discuss your app idea, please ping us a message under 
+                <a href={`${GlobalUrl}#contacts`}>Let us get in touch and discuss your app idea, please ping us a message under 
                 Contact us section</a>
                 </ul>
                 </div>;
-            articleImg = "http://localhost:3000/prices1-6.jpg";
+            articleImg = `${GlobalUrl}prices1-6.jpg`;
         }
         if(this.props.location.pathname === "/article/4") {
             contentHeading = "B2B Application Development";
@@ -191,10 +192,10 @@ class BlogItem extends Component {
                 <p>To sum up, as you can see, B2B applications can be really useful to run business smoothly and with maximum 
                     quality, as such apps make the work more efficient and consequently generate income. We hope that the article 
                     was useful to you and provided you with all information you were interested in.<br/>
-                <a href="http://localhost:3000/#contacts">Let us get in touch and discuss your app idea, please ping us a message 
+                <a href={`${GlobalUrl}#contacts`}>Let us get in touch and discuss your app idea, please ping us a message 
                 under Contact us section</a></p>
             </div>;
-            articleImg = "http://localhost:3000/b2b1-5.jpg";
+            articleImg = `${GlobalUrl}b2b1-5.jpg`;
         }
         if(this.props.location.pathname === "/article/5") {
             contentHeading = "Ukrainian software developers: reasons to hire";
@@ -238,17 +239,17 @@ class BlogItem extends Component {
                     who love their job and keen on constant development of their personalities.<br/>
                 We hope our article was useful to you. So do not hesitate while choosing Ukrainian software developers to 
                 turn your ideas into projects.<br/>
-                <a href="http://localhost:3000/#contacts">Let us get in touch and discuss your app idea, please ping us 
+                <a href={`${GlobalUrl}#contacts`}>Let us get in touch and discuss your app idea, please ping us 
                 a message under Contact us section</a></p>
             </div>;
-            articleImg = "http://localhost:3000/UaIT1-4.jpg";
+            articleImg = `${GlobalUrl}UaIT1-4.jpg`;
         }
         /*const imgsMarckup = articleImg.map((item, index) => {
             return <img key={index} src={item} alt={"article-img-"+index}/>;
         });*/
         return(
             <div className="article-page-block">
-                <a className="route-to-home" href="http://localhost:3000">Return to Home page</a>
+                <a className="route-to-home" href={GlobalUrl}>Return to Home page</a>
                 <h2 className="article-page-heading_top">{contentHeading}</h2>
                 <img className="article-main-img" src={articleImg} alt="article-img"/>
                 <div className="article-page-content-wrapper">

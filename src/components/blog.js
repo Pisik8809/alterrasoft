@@ -1,6 +1,7 @@
 // blog.js
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import GlobalUrl from './global-url';
 import { Link } from "react-router-dom";
 
 class Blog extends Component {
@@ -12,7 +13,7 @@ class Blog extends Component {
     }
     
     getMyData(){
-        fetch('http://localhost:3000/alterra-data.json')
+        fetch(`${GlobalUrl}alterra-data.json`)
             .then((res) => res.json())
             .then((data) => {
                 this.setState({ alterraData: data });
@@ -29,10 +30,10 @@ class Blog extends Component {
             const blogMarckup = blogData.map((item, index) =>
             <div key={index} className="blog-block-item">
                 <Link to={item.href} className="blog-block-link_with_img">
-                    <img src={item.first} alt="conf-cart"/>
+                    <img src={`${GlobalUrl}${item.first}`} alt="conf-cart"/>
                     <h4 className="blog-block-item_heading">{item.second}</h4>
                 </Link>
-                <a href="http://localhost:3000/" className="blog-block-item_category-link">
+                <a href={GlobalUrl} className="blog-block-item_category-link">
                     <p className="blog-block-item-category"><FontAwesomeIcon icon="tag" />IT articles</p>
                 </a>
                 <p className="blog-block-item-description">{item.third}</p>

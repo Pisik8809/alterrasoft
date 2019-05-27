@@ -1,5 +1,6 @@
 // slider.js
 import React from "react";
+import GlobalUrl from './global-url';
 import Slider from "react-slick";
 
 class SimpleSlider extends React.Component {
@@ -11,7 +12,7 @@ class SimpleSlider extends React.Component {
     }
 
     getMyData(){
-        fetch('http://localhost:3000/alterra-data.json')
+        fetch(`${GlobalUrl}alterra-data.json`)
             .then((res) => res.json())
             .then((data) => {
                 this.setState({ alterraData: data });
@@ -39,7 +40,7 @@ class SimpleSlider extends React.Component {
                 <div key={index} >
                     <h3 className={"slick-slide-heading"}>{item.heading}</h3>
                     <p className={"slick-slide-description"}>{item.description}</p>
-                    <img className={"slick-slide-image"} src={item.img} alt={item.alt}/>
+                    <img className={"slick-slide-image"} src={`${GlobalUrl}${item.img}`} alt={item.alt}/>
                 </div>
             );
             return (

@@ -1,5 +1,6 @@
 // meters.js
 import React, { Component } from 'react';
+import GlobalUrl from './global-url';
 
 class Meters extends Component {
     constructor(props){
@@ -22,7 +23,7 @@ class Meters extends Component {
     } */
 
     getMyData(){
-        fetch('http://localhost:3000/alterra-data.json')
+        fetch(`${GlobalUrl}alterra-data.json`)
             .then((res) => res.json())
             .then((data) => {
                 this.setState({ alterraData: data });
