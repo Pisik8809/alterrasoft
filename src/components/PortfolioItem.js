@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import GlobalUrl from './global-url';
 import Slider from "react-slick";
 import Footer from './footer';
+import { createBrowserHistory } from "history";
+const customHistory = createBrowserHistory();
 
 //import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -130,7 +132,7 @@ class PortfolioItem extends Component {
         );
         return(
             <div className="portfolio-page-block">
-            <a className="route-to-home" href={GlobalUrl}>Return to Home page</a>
+            <button className="route-to-home" onClick={customHistory.goBack}>>Return to Home page</button>
             <h2 className="portfolio-page-heading_top">{contentHeading}</h2>
             <Slider className="portfolio-page-slider" {...settings}>
                 {sliderMarckup}

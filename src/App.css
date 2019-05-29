@@ -51,6 +51,11 @@ aside {
   outline: none;
 }
 
+#root {
+  font-family: 'Raleway', sans-serif;
+  font-weight: Semi-Bold;
+}
+
 .App {
   text-align: center;
   background: gainsboro;
@@ -84,6 +89,21 @@ aside {
   to {
     transform: rotate(360deg);
   }
+}
+
+.alternate-site-loader {
+  position: fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right: 0;
+  z-index: 9999;
+  width: 100vw;
+  height: 100vh;
+  background-color: #6e767a;
+  background-image: url(loader-logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 @import "~slick-carousel/slick/slick.css";
@@ -910,12 +930,16 @@ footer {
   color: #0093e9;
   text-decoration: none;
   display: block;
-  padding: 25px 0;
+  padding: 10px 25px;
+  margin: 25px auto 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.route-to-home:visited {
+/*.route-to-home:visited {
   color: #0093E9;
-}
+}*/
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .portfolio-item {

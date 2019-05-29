@@ -23,7 +23,7 @@ class Menu extends Component {
     render() {
         const menuData = this.state.alterraData.menu;
         if (!menuData) {
-            return <div>NO DATA</div>
+            return <div className="alternate-site-loader"></div>
         }
         else {
             const menuMarckup = menuData.map((item, index) =>

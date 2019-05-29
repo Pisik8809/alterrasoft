@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import AllInOne from './components/all-in-one';
 import PortfolioItem from './components/PortfolioItem';
 import BlogItem from './components/BlogItem';
@@ -8,14 +8,7 @@ import { faObjectGroup, faFolderOpen, faFile, faTv, faPalette, faDesktop, faWren
 import { library } from '@fortawesome/fontawesome-svg-core';
 library.add(faObjectGroup, faFolderOpen, faFile, faTv, faPalette, faDesktop, faWrench, faCog, faTag, faBars);
 
-class App extends Component {
-  constructor(props){
-    super(props);
-    this.state = {
-
-    }
-  }
-    render() {
+const App = () => {
       return (
         <Router>
           <Switch>
@@ -25,7 +18,6 @@ class App extends Component {
           </Switch>
         </Router>
       );
-  }
 }
 
 export default App;

@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import GlobalUrl from './global-url';
 import Footer from './footer';
+import { createBrowserHistory } from "history";
+
+const customHistory = createBrowserHistory();
 //import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class BlogItem extends Component {
@@ -249,7 +252,7 @@ class BlogItem extends Component {
         });*/
         return(
             <div className="article-page-block">
-                <a className="route-to-home" href={GlobalUrl}>Return to Home page</a>
+                <button className="route-to-home" onClick={customHistory.goBack}>>Return to Home page</button>
                 <h2 className="article-page-heading_top">{contentHeading}</h2>
                 <img className="article-main-img" src={articleImg} alt="article-img"/>
                 <div className="article-page-content-wrapper">
