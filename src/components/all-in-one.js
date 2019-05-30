@@ -34,9 +34,9 @@ class AllInOne extends Component {
           }
           else {*/
         return (
-            <div className="App" id="home">
+            <div className="App">
                 <header className={"alterra-header"}><Header/></header>
-                <SimpleSlider/>
+                <div id="home"><SimpleSlider/></div>
                 <About/>
                 <Meters/>
                 <Technologies/>

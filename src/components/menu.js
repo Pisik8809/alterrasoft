@@ -1,7 +1,8 @@
 // menu.js
 import React, { Component } from 'react';
 import GlobalUrl from './global-url';
-import ScrollspyNav from "react-scrollspy-nav";
+import { Link} from "react-scroll";
+//animateScroll as scroll 
 class Menu extends Component {
     constructor(props){
         super(props);
@@ -28,21 +29,25 @@ class Menu extends Component {
         else {
             const menuMarckup = menuData.map((item, index) =>
              <li key={index} className="alterra-navigation-list-item">
-                <a href={item.href}>{item.text}</a>
+                <Link to={item.href}
+                    activeClass="active"
+                    spy={true}
+                    smooth={true}
+                    hashSpy={true}
+                    href={`#${item.href}`} 
+                    offset={-60}
+                    duration={1000}
+                    delay={300}               
+                >{item.text}</Link>
             </li>
         );
             return (
                 <nav>
-                    <ScrollspyNav                        
-                        scrollTargetIds={['home', 'about', 'projects', 'blog', 'contacts' ]}
-                        activeNavClass="active"
-                        scrollDuration="1000"
-                        headerBackground="true"
-                    >
+                    <nav>
                     <ul className={"alterra-navigation"}>
                         {menuMarckup}
                     </ul>
-                    </ScrollspyNav>
+                    </nav>
                 </nav>
             );
         
@@ -52,4 +57,9 @@ class Menu extends Component {
         this.getMyData();
     }
 }
+
+/*scrollTargetIds={['home', 'about', 'projects', 'blog', 'contacts' ]}
+activeNavClass="active"
+scrollDuration="1000"
+headerBackground="true"*/
 export default Menu;

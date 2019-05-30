@@ -1,10 +1,10 @@
 {
   "menu": [
-    {"href": "#home", "text": "Home"},
-    {"href": "#about", "text": "About"},
-    {"href": "#projects", "text": "Projects"},
-    {"href": "#blog", "text": "Blog"},
-    {"href": "#contacts", "text": "Contacts"}
+    {"href": "home", "text": "Home"},
+    {"href": "about", "text": "About"},
+    {"href": "projects", "text": "Projects"},
+    {"href": "blog", "text": "Blog"},
+    {"href": "contacts", "text": "Contacts"}
   ],
   "slider": [
     {"heading" : "We solve your IT tasks.", 
@@ -58,15 +58,15 @@
       "third": "Our developers are experienced in several programming languages including HTML CSS, PHP, JavaScript, React JS, Objective-C, Swift, React Native and Flutter which allows us to develop for a variety of platforms including Web, Android, iOS and Mobile Web."
     },
     {"first": "folder-open", 
-      "second": "Stages of Software Development Cycle", 
+      "second": "UX/UI consulting", 
       "third": " We specialize in UX/UI design and can provide recommendations on how products should look and flow in order to drive conversions while upholding strong branding guidelines and best practices. Have your digital exterior handled with care. Our designers’ tastefulness combined with thorough audits, will make your solution effective and popular."
     },
     {"first": "file", 
-      "second": "IT  Software Development: How to Choose Provider", 
+      "second": "Technology consulting", 
       "third": "We work closely with our customers to identify and execute the best strategies for resolving their complicated development needs. Ask our professionals about any issues and get them successfully resolved. All your technical questions will be fully answered, by our reliable team. They can also guide you through any technical challenges you are facing now."
     },
     {"first": "tv", 
-      "second": "B2B Application Development", 
+      "second": "Startup development", 
       "third": "Grow your startup from a raw idea to a  running project. Share your ideas with our team and we’ll add our expertise to facilitate their creation! We provide recommendations on product management and prioritization to best position your company to meet their objectives and drive success metrics in an increasingly competitive startups market."
     }
   ],

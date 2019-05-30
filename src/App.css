@@ -198,10 +198,11 @@ aside {
   position: absolute;
   font-size: 74px;
   line-height: 76px;
+  font-weight: bold;
   letter-spacing: 0px;
   margin-bottom: 22px;
   height: auto;
-  top: calc(50% - 30px);
+  top: 30%;
   width: 64vw;
   text-align: center;
   z-index: 200;
@@ -211,13 +212,14 @@ aside {
 
 .slick-slide-description {
   position: absolute;
-  top: calc(50% + 150px);
+  top: calc(30% + 250px);
   width: 64vw;
   text-align: center;
   z-index: 200;
   color: white;
   font-size: 24pt;
   line-height: 36pt;
+  font-weight: 500;
   padding: 0 18vw;
 }
 
@@ -346,6 +348,8 @@ aside {
 .about-heading {
   font-size: 34px;
   line-height: 1.284em;
+  color: #202020;
+  font-weight: bold;
   margin: 35px auto 25px;
 }
 
@@ -360,12 +364,15 @@ aside {
   font-size: 19px;
   line-height: 1.4em;
   margin-bottom: 15px;
+  color: #222222;
+  font-weight: 600;
 }
 
 .about-section-item__desc {
+  font-family: 'Lato', sans-serif;
   font-size: 14px;
   line-height: 23px;
-  font-weight: 500;
+  color: #6e7b7a;
 }
 
 #root > div > div:nth-child(3) {
@@ -391,6 +398,8 @@ aside {
   flex-basis: 35%;
   font-size: 34px;
   line-height: 1.284em;
+  color: #202020;
+  font-weight: bold;
 }
 
 .meters-wrapper {
@@ -403,6 +412,10 @@ aside {
 }
 
 .meters-wrapper label {
+  font-size: 15px;
+  line-height: 22px;
+  color: #212121;
+  font-weight: 600;
   margin-bottom: 15px;
 }
 
@@ -425,6 +438,8 @@ aside {
 .technologies-block-heading {
   font-size: 34px;
   line-height: 1.284em;
+  color: #202020;
+  font-weight: bold;
   margin-bottom: 25px;
 }
 
@@ -442,6 +457,8 @@ aside {
 .technoly-item-heading {
   font-size: 19px;
   line-height: 1.4em;
+  color: #222222;
+  font-weight: 600;
   margin-top: 35px;
   margin-bottom: 25px;
   transition: color 0.5s ease-in-out;
@@ -450,7 +467,7 @@ aside {
 .technoly-item-description {
   font-size: 14px;
   line-height: 23px;
-  font-weight: 500;
+  font-family: Lato, sans-serif;
   color: #6e767a;
 }
 
@@ -517,6 +534,8 @@ aside {
 .portfolio-heading {
   font-size: 34px;
   line-height: 1.284em;
+  font-weight: bold;
+  color: #202020;
   margin: 35px auto 25px;
 }
 
@@ -524,6 +543,7 @@ aside {
   font-size: 18px;
   line-height: 1.508em;
   font-weight: 500;
+  color: #797979;
   margin-bottom: 25px;
 }
 
@@ -569,6 +589,14 @@ aside {
   font-size: 15px;
   line-height: 17px;
   margin: 15px auto;
+  font-weight: 600;
+}
+
+.portfolio-item-tags {
+  font-family: Lato, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #6e7b7a;
 }
 
 .blog-block-link_with_img>img {
@@ -590,6 +618,8 @@ aside {
   margin-bottom: 20px;
   font-size: 34px;
   line-height: 1.284em;
+  color: #202020;
+  font-weight: bold;
 }
 
 .blog-block-item {
@@ -624,6 +654,9 @@ aside {
 
 .blog-block-item-category {
   color: #0093e9;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 23px;
 }
 
 .blog-block-item-category>svg {
@@ -632,9 +665,9 @@ aside {
 
 .blog-block-item-description {
   color: #6e767a;
+  font-family: Lato, sans-serif;
   font-size: 14px;
   line-height: 23px;
-  font-weight: 500;
 }
 
 .contact-form-block {
@@ -652,6 +685,7 @@ aside {
   padding: 85px 40px 0;
   font-size: 19px;
   line-height: 1.4em;
+  color: #222222;
   font-weight: 600;
 }
 
@@ -659,6 +693,10 @@ aside {
   display: block;
   padding: 10px 25px;
   position: relative;
+  color: #5d5d5d;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 23px;
 }
 
 .full-form-element label:before {
@@ -675,6 +713,7 @@ aside {
   font-size: 22px;
   line-height: 1.2em;
   font-weight: 700;
+  color: #222222;
   margin-bottom: 25px;
   flex-basis: 100%;
 }
@@ -716,6 +755,11 @@ aside {
   color: white;
   transition: background-color, color;
   transition-duration: 0.5s;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-transform: uppercase;
 }
 
 .form-example>input[type="submit"]:hover {
@@ -742,7 +786,12 @@ aside {
 .call-to-action_link {
   width: 215px;
   height: 50px;
-  line-height: 50px;
+  line-height: 48px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-family: Lato, sans-serif;
   color: white;
   border: 1px solid white;
   text-decoration: none;
@@ -776,8 +825,11 @@ footer {
 }
 
 .footer-contacts-link {
- color: #6e767a;
  padding: 7.5px 0;
+ color: #6e767a; 
+ font-family: Lato, sans-serif;
+ font-size: 14px;
+ line-height: 23px;
 }
 
 .footer-contact-heading {
@@ -799,7 +851,10 @@ footer {
 .copywrite {
   background: #303030;
   padding: 30px 0;
-  color: white;
+  color: #6e767a; 
+ font-family: Lato, sans-serif;
+ font-size: 14px;
+ line-height: 23px;
 }
 
 .copywrite span {
@@ -953,6 +1008,7 @@ footer {
 @media (min-width: 415px) and (max-width: 768px) {
   .alterra-logo {
     width: 200px;
+    margin-right: 15px;
   }
   .slick-slide-heading {
     top: 30%;
@@ -1026,11 +1082,11 @@ footer {
   }
   .slick-slide-heading {
     top: 25px;
-    font-size: 36px;
-    line-height: 36px;
+    font-size: 30px;
+    line-height: 30px;
   }
   .slick-slide-description {
-    top: 120px;
+    top: 100px;
     font-size: 11pt;
     line-height: 14pt;
   }
@@ -1113,28 +1169,28 @@ footer {
   .article-page-block ol>li, .article-page-block ul>li {
     transform: translate(0, 0);
   }
-}
-
-@media (min-width: 320px) and (max-width: 376px) {
   .technologies-block-heading,
   .about-heading,
   .meters-heading,
   .portfolio-heading,
   .blog-block-heading {
-    font-size: 24px;
     padding: 0 25px;
+    font-size: 24px;
   }
   .blog-block-heading,
   .meters-wrapper {
     padding-top: 25px;
   }
+}
+
+@media (min-width: 320px) and (max-width: 376px) {
   .slick-slide-heading {
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 20px;
+    line-height: 20px;
     top: 15px;
   }
   .slick-slide-description {
-    top: 90px;
+    top: 75px;
     font-size: 8.5pt;
     line-height: 10pt;
   }
